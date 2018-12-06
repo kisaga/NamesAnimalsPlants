@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@drawable/blackboardwithborder">
+
+
+    <TextView
+        android:id="@+id/setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ρυθμίσεις"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/chalkColor"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blackboard_button">
+            <TextView
+                android:id="@+id/textSounds"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/chalkColor"
+                android:layout_height="wrap_content"
+                android:text="Ήχοι"/>
+            <Switch
+                android:id="@+id/switchSounds"
+                android:layout_width="match_parent"
+                android:scaleX="0.6"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blackboard_button"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/gameSounds"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/chalkColor"
+                android:layout_height="wrap_content"
+                android:text="Ήχοι\n Παιχνιδιού"/>
+            <Switch
+                android:id="@+id/switchGameSounds"
+                android:layout_width="match_parent"
+                android:scaleX="0.6"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

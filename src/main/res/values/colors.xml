@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="pencilColor">#585c65</color>
+    <color name="chalkColor">#F3F2F2</color>
+    <color name="redChalk">#E87060</color>
+    <color name="greenChalk">#90c070</color>
+    <color name="rightGreen">#00b300</color>
+
+
+    <color name="trans_chalk5">#0dF3F2F2</color>
+    <color name="trans_chalk10">#19F3F2F2</color>
+    <color name="trans_chalk15">#26F3F2F2</color>
+    <color name="trans_chalk20">#33F3F2F2</color>
+    <color name="trans_chalk25">#40F3F2F2</color>
+    <color name="trans_chalk30">#4dF3F2F2</color>
+    <color name="trans_chalk40">#66F3F2F2</color>
+    <color name="trans_chalk50">#80F3F2F2</color>
+    <color name="trans_chalk60">#99F3F2F2</color>
+    <color name="trans_chalk70">#b3F3F2F2</color>
+    <color name="trans_chalk80">#ccF3F2F2</color>
+    <color name="trans_chalk90">#e6F3F2F2</color>
+
+
+
+    <color name="transp_black5">#0d000000</color>
+    <color name="transp_black10">#19000000</color>
+    <color name="transp_black15">#26000000</color>
+    <color name="transp_black20">#33000000</color>
+    <color name="transp_black25">#40000000</color>
+    <color name="transp_black30">#4d000000</color>
+    <color name="transp_black35">#5a000000</color>
+    <color name="transp_black40">#66000000</color>
+    <color name="transp_black50">#80000000</color>
+    <color name="transp_black60">#99000000</color>
+    <color name="transp_black70">#b3000000</color>
+    <color name="transp_black80">#cc000000</color>
+    <color name="transp_black90">#e6000000</color>
+
+
+    <color name="trans_pencil5">#0d585c65</color>
+    <color name="trans_pencil10">#19585c65</color>
+    <color name="trans_pencil15">#26585c65</color>
+    <color name="trans_pencil20">#33585c65</color>
+    <color name="trans_pencil25">#40585c65</color>
+    <color name="trans_pencil30">#4d585c65</color>
+    <color name="trans_pencil35">#5a585c65</color>
+    <color name="trans_pencil40">#66585c65</color>
+    <color name="trans_pencil45">#73585c65</color>
+    <color name="trans_pencil50">#80585c65</color>
+    <color name="trans_pencil55">#7f585c65</color>
+    <color name="trans_pencil60">#99585c65</color>
+    <color name="trans_pencil65">#a5585c65</color>
+    <color name="trans_pencil70">#b3585c65</color>
+    <color name="trans_pencil75">#c0585c65</color>
+    <color name="trans_pencil80">#cc585c65</color>
+    <color name="trans_pencil85">#d9585c65</color>
+    <color name="trans_pencil90">#e6585c65</color>
+
+    <color name="trans_pen5">#0d000F55</color>
+    <color name="trans_pen10">#19000F55</color>
+    <color name="trans_pen15">#26000F55</color>
+    <color name="trans_pen20">#33000F55</color>
+    <color name="trans_pen25">#40000F55</color>
+    <color name="trans_pen30">#4d000F55</color>
+    <color name="trans_pen35">#5a000F55</color>
+    <color name="trans_pen40">#66000F55</color>
+    <color name="trans_pen45">#73000F55</color>
+    <color name="trans_pen50">#80000F55</color>
+    <color name="trans_pen55">#7f000F55</color>
+    <color name="trans_pen60">#99000F55</color>
+    <color name="trans_pen65">#a5000F55</color>
+    <color name="trans_pen70">#b3000F55</color>
+    <color name="trans_pen75">#c0000F55</color>
+    <color name="trans_pen80">#cc000F55</color>
+    <color name="trans_pen85">#d9000F55</color>
+    <color name="trans_pen90">#e6000F55</color>
+
+</resources>

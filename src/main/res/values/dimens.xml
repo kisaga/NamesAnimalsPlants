@@ -1,0 +1,71 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="marginTitle">131dp</dimen>
+    <dimen name="arrowMargin">141dp</dimen>
+    <dimen name="marginText">28dp</dimen>
+    <dimen name="textSizeTitle">60sp</dimen>
+    <dimen name="textSize">40sp</dimen>
+
+    <dimen name="textSizeIndicators">15sp</dimen>
+
+
+
+    <dimen name="marginTitleTester">91dp</dimen>
+    <dimen name="arrowMarginTester">101dp</dimen>
+    <dimen name="marginTextTester">23dp</dimen>
+
+    <dimen name="textSizeTitleTester">60sp</dimen>
+    <dimen name="textSizeTester">40sp</dimen>
+    <dimen name="buttonTextSizeTester">15sp</dimen>
+
+
+    <dimen name="marginButton">20dp</dimen>
+
+
+    <!--==============new dimens===================-->
+    <dimen name="marginStart">2dp</dimen>
+    <dimen name="marginEnd">2dp</dimen>
+    <dimen name="button_text_size">20sp</dimen>
+    <dimen name="name_text_size1">30sp</dimen>
+    <dimen name="level_text_size1">50sp</dimen>
+    <!--===========================================-->
+
+
+
+    <dimen name="mainTextSize">55sp</dimen>
+    <dimen name="letterTextSize">100sp</dimen>
+    <dimen name="name_text_size">30sp</dimen>
+    <dimen name="nameMarginTop">-20dp</dimen>
+    <dimen name="letterMarginTop">-20dp</dimen>
+    <dimen name="levelTextSize">30sp</dimen>
+
+
+
+
+    <dimen name="textSizePost">19sp</dimen>
+    <dimen name="textSizeName">20sp</dimen>
+    <dimen name="totalPointsMargins">90dp</dimen>
+    <dimen name="resultTextSize1">25sp</dimen>
+    <dimen name="resultTextSize">30sp</dimen>
+
+
+
+    <dimen name="textSizePostSuggestion">40sp</dimen>
+
+    <dimen name="textSizeCategoryTitle">35sp</dimen>
+    <dimen name="textSizeCategoryTitleSmall">24sp</dimen>
+
+
+    <dimen name="nameMarginViewer">-6dp</dimen>
+    <dimen name="levelMarginViewer">-7dp</dimen>
+
+
+    <dimen name="keyboard_text_size">40sp</dimen>
+    <dimen name="keyboard_margin">0sp</dimen>
+
+</resources>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/friends"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.user.summerproject.FriendsActivity"
+    android:background="@drawable/blackboard">
+
+    <LinearLayout
+        android:id="@+id/friends_title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/transp_black20"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/friends_back_button"
+            android:onClick="backClicked"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/friends_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Φίλοι"
+                android:layout_marginEnd="80dp"
+                android:textAlignment="center"
+                android:textColor="@color/chalkColor"
+                android:textSize="50sp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/add_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/friends_title1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+            <EditText
+                android:id="@+id/friendname_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/chalkColor"
+                android:textColorHint="@color/chalkColor"
+                android:hint="Νέος φίλος"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:background="@color/transp_black20"/>
+            <TextView
+                android:id="@+id/friend_add_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="4"
+                android:padding="0dp"
+                android:textColor="@color/chalkColor"
+                android:layout_gravity="center"
+                android:background="@color/transp_black40"
+                android:text="+"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/chalkColor"
+                android:layout_gravity="center"
+                android:padding="-20dp"
+                android:background="@color/transp_black20"
+                android:textSize="30sp"
+                />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/find_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/add_layout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transp_black20"
+            android:layout_weight="3"/>
+        <TextView
+            android:id="@+id/find_friends_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@color/transp_black35"
+            android:text="Βρες Νέους Φίλους"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="@color/chalkColor"
+            android:clickable="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transp_black20"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/request_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/find_friends"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/request_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/chalkColor"
+            android:textSize="40sp"
+            android:background="@color/transp_black40"
+            android:text="Αιτήματα"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/request_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/chalkColor"
+            android:textSize="20sp"
+            android:background="@color/transp_black30"
+            android:layout_below="@+id/request_layout"
+            android:text="Κλικάρετε για απάντηση"
+            android:textAlignment="center"/>
+        <GridView
+            android:id="@+id/requests_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transp_black20"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:overScrollMode="never"
+            android:stretchMode="columnWidth"
+            >
+        </GridView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/request_layout">
+
+        <TextView
+            android:id="@+id/delete_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/chalkColor"
+            android:background="@color/transp_black40"
+            android:textSize="40sp"
+            android:text="Φίλοι"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/delete_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/chalkColor"
+            android:textSize="20sp"
+            android:text="Κλικάρετε για διαγραφή"
+            android:background="@color/transp_black30"
+            android:textAlignment="center"/>
+
+
+        <GridView
+            android:id="@+id/friends_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transp_black20"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:overScrollMode="never"
+            android:stretchMode="columnWidth"
+            >
+
+        </GridView>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

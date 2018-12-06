@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relative"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/notebook"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.01">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="17dp">
+                <Button
+                    android:id="@+id/newGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/button_text_size"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/new_game_button"
+                    />
+                <Button
+                    android:id="@+id/wordTester"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/button_text_size"
+                    android:layout_marginLeft="5dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/suggestion_button"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/friends_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/friends_button"
+                    android:textSize="@dimen/button_text_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1.5"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/nameView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/name_text_size1"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:text="ψευδώνυμο"
+                    android:gravity="center_vertical|end"
+                    android:textColor="@color/pencilColor"
+                    android:textAlignment="gravity"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/game_views"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:layout_marginStart="22dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/showing_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4.7"
+                    android:alpha="0.7"
+                    android:background="@null"/>
+                <TextView
+                    android:id="@+id/button_description_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="gravity"
+                    android:gravity="center"
+                    android:textSize="35sp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/message_text"
+                    android:layout_width="match_parent"
+                    android:textAlignment="gravity"
+                    android:gravity="start"
+                    android:textSize="30sp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="5"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="20dp">
+                    <TextView
+                        android:id="@+id/indicator_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textAlignment="gravity"
+                        android:gravity="center|center_vertical"
+                        android:textSize="35sp"/>
+                    <Button
+                        android:id="@+id/next_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.7"
+                        android:background="@drawable/done_button"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/endLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:layout_marginLeft="17dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/stats_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/button_text_size"
+                android:layout_margin="4dp"
+                android:alpha="0.7"
+                android:background="@drawable/stats_button"/>
+            <Button
+                android:id="@+id/settings_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/button_text_size"
+                android:layout_margin="4dp"
+                android:alpha="0.7"
+                android:background="@drawable/settings_button"/>
+
+            <Button
+                android:id="@+id/info_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/button_text_size"
+                android:layout_margin="4dp"
+                android:alpha="0.7"
+                android:background="@drawable/info_button"/>
+
+            <Button
+                android:id="@+id/logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:alpha="0.7"
+                android:background="@drawable/log_out_button"
+                android:textSize="@dimen/button_text_size"/>
+            <Button
+                android:id="@+id/exit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:alpha="0.7"
+                android:background="@drawable/exit_button"
+                android:textSize="@dimen/button_text_size"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relative"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/notebook"
+    >
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/start_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="17dp">
+            <Button
+                android:id="@+id/newGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/button_text_size"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/new_game_button"
+                />
+            <Button
+                android:id="@+id/wordTester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/button_text_size"
+                android:layout_marginLeft="5dp"
+                android:alpha="0.7"
+                android:background="@drawable/suggestion_button"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/friends_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:alpha="0.7"
+                android:background="@drawable/friends_button"
+                android:textSize="@dimen/button_text_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/nameView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/name_text_size1"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:clickable="true"
+                android:onClick="levelViewClick"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/pencilColor"
+                android:textAlignment="gravity"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game_views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_line"
+        android:layout_above="@+id/endLine"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+        <GridView
+            android:id="@+id/game_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="3"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:overScrollMode="never"
+            android:stretchMode="columnWidth"
+            >
+        </GridView>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/endLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="17dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/stats_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/button_text_size"
+            android:layout_margin="4dp"
+            android:alpha="0.7"
+            android:background="@drawable/stats_button"/>
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/button_text_size"
+            android:layout_margin="4dp"
+            android:alpha="0.7"
+            android:background="@drawable/settings_button"/>
+
+        <Button
+            android:id="@+id/info_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/button_text_size"
+            android:layout_margin="4dp"
+            android:alpha="0.7"
+            android:background="@drawable/info_button"/>
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:alpha="0.7"
+            android:background="@drawable/log_out_button"
+            android:textSize="@dimen/button_text_size"/>
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:alpha="0.7"
+            android:background="@drawable/exit_button"
+            android:textSize="@dimen/button_text_size"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

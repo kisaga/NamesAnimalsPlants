@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/blackboard"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/topLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.example.user.summerproject.myTools.FriendsTextView
+            android:id="@+id/titleInfo"
+            android:textColor="@color/chalkColor"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:layout_weight="0.2"
+            android:background="@color/transp_black20"
+            android:text="Παιχνίδι"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <!--Changable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLinear"
+        android:overScrollMode="never"
+        android:layout_above="@+id/bottomLinear">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/scoreNgame"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:id="@+id/top2"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/chalkColor"
+                    android:layout_marginTop="20dp"
+                    android:text="Κανόνες παιχνιδιού"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true" />
+
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:id="@+id/rules"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/chalkColor"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Στην αρχή του παιχνιδιού επιλέγεται τυχαία ένα γράμμα και έχεις 1 λεπτό να βρεις μία λέξη για κάθε κατηγορία που να ξεκινάει με το γράμμα που επιλέχθηκε ."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top2"/>
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:id="@+id/top3"
+                    android:textColor="@color/chalkColor"
+                    android:textSize="25sp"
+                    android:layout_marginTop="5dp"
+                    android:text="Οι κατηγορίες είναι:"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rules" />
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/top3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/linearLayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.example.user.summerproject.myTools.FriendsTextView
+                            android:text="ΟΝΟΜΑTA"
+                            android:gravity="center"
+                            android:layout_weight="0.9"
+                            android:textColor="@color/chalkColor"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                        <com.example.user.summerproject.myTools.FriendsTextView
+                            android:textColor="@color/chalkColor"
+                            android:textStyle="bold"
+                            android:text="ΖΩΑ"
+                            android:gravity="center"
+                            android:layout_weight="1.03"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                        <com.example.user.summerproject.myTools.FriendsTextView
+                            android:textColor="@color/chalkColor"
+                            android:textStyle="bold"
+                            android:text="ΦΥΤΑ"
+                            android:gravity="center"
+                            android:layout_weight="0.99"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+                        <com.example.user.summerproject.myTools.FriendsTextView
+                            android:textColor="@color/chalkColor"
+                            android:textStyle="bold"
+                            android:text="ΕΠΑΓΓΕΛΜΑTA"
+                            android:gravity="center"
+                            android:layout_weight="0.801"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                        <com.example.user.summerproject.myTools.FriendsTextView
+                            android:layout_weight="0.9"
+                            android:text="ΧΡΩΜΑTA"
+                            android:gravity="center"
+                            android:textColor="@color/chalkColor"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                        <com.example.user.summerproject.myTools.FriendsTextView
+                            android:textColor="@color/chalkColor"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="ΧΩΡΕΣ/ΠΟΛΕΙΣ"
+                            android:layout_weight="0.97"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:textSize="30sp"
+                    android:textColor="@color/chalkColor"
+                    android:textAlignment="center"
+                    android:text="Βαθμολογία + Νικητής"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/textView8" />
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:text="Αν και οι 2 παίκτες επιτύχουν σωστή λέξη και οι λέξεις είναι διαφορετικές μεταξύ τους τότε κάθε παίκτης παίρνει απο 10 πόντους."
+                    android:textSize="18sp"
+                    android:textColor="@color/chalkColor"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView8"
+                    android:textAlignment="center"
+                    android:id="@+id/textView9" />
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:textColor="@color/chalkColor"
+                    android:layout_marginTop="5dp"
+                    android:text="Αν ένας παίκτης επιτύχει σωστή λέξη και ο άλλος όχι, τότε ο πρώτος παίρνει 20 και ο δεύτερος 0."
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/textView9"
+                    android:id="@+id/textView10" />
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:textSize="18sp"
+                    android:textColor="@color/chalkColor"
+                    android:layout_marginTop="5dp"
+                    android:text="Αν και οι 2 παίκτες επιτύχουν σωστή λέξη και οι λέξεις αυτές είναι ίδιες μεταξύ τους τότε κάθε παίκτης παίρνει απο 5 πόντους."
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView10"
+                    android:id="@+id/textView11" />
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:textSize="18sp"
+                    android:textColor="@color/chalkColor"
+                    android:text="Τέλος αν κάνενας απο τους δύο παίκτες δεν βρεί σωστή λέξη τότε κανείς δεν παίρνει πόντους."
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView11"
+                    android:id="@+id/textView12" />
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:layout_below="@id/textView12"
+                    android:text="Νικητής είναι ο παίκτης με τους περισσότερους πόντους και σε περίπτωση ισοπαλίας αυτός με τον καλύτερο χρόνο."
+                    android:textColor="@color/chalkColor"
+                    android:textSize="23sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="12dp"
+                    android:textAlignment="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/exp_points_levels"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:textColor="@color/chalkColor"
+                    android:textSize="25sp"
+                    android:text="Για να ανέβεις level πρέπει να μαζεύεις πόντους exp τους οποίους κερδίζεις με μέτριες και καλές επιδόσεις είτε σε νίκη είτε σε ήττα όμως για πολύ κακές επιδόσεις ενδέχεται να χάσεις πόντους."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/textView13"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="20dp" />
+
+
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:text="Οι πόντοι exp εξαρτώνται απο 4 παράγοντες:"
+                    android:textAlignment="center"
+                    android:textSize="27sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/chalkColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:layout_below="@+id/textView13"
+                    android:layout_alignParentStart="true" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@+id/textView14"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/linearLayout2">
+
+
+                    <com.example.user.summerproject.myTools.FriendsTextView
+                        android:textSize="22sp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/chalkColor"
+                        android:layout_marginTop="4dp"
+                        android:text="1) Πόντοι που πέτυχες στο παιχνίδι"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <com.example.user.summerproject.myTools.FriendsTextView
+                        android:textSize="22sp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/chalkColor"
+                        android:text="2) Διαφορά πόντων απο τον αντίπαλο"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <com.example.user.summerproject.myTools.FriendsTextView
+                        android:textSize="22sp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/chalkColor"
+                        android:text="3) Ο χρόνος που χρειάστηκες"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <com.example.user.summerproject.myTools.FriendsTextView
+                        android:layout_marginTop="4dp"
+                        android:textSize="22sp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/chalkColor"
+                        android:text="4) Διαφορά χρόνου από τον αντίπαλο"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/suggestionInfo"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:text="Οι προτάσεις είναι ο τρόπος να μας βοηθήσεις να κάνουμε καλύτερο το παιχνίδι συμπληρώνοντας λέξεις που λείπουν απ' το λεξικό. Προσπαθήσαμε να βάλουμε όσες περισσότερες λέξεις μπορούσαμε, αλλά λείπουν αρκετές ακόμα."
+                    android:textColor="@color/chalkColor"
+                    android:textSize="22sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView16" />
+
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:text="Κίνητρα για προτάσεις"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/chalkColor"
+                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/textView16"
+                    android:id="@+id/textView18" />
+
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:textColor="@color/chalkColor"
+                    android:textSize="22sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Για να σε ενθαρρύνουμε να μας στείλεις προτάσεις θα σε επιβραβεύουμε με exp-πόντους αναλογικά με το level για κάθε σωστή πρόταση."
+                    android:layout_width="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView18"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/textView19" />
+
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:text="\n Όμως λόγω της αδυναμίας μας να εξετάσουμε μεγάλο αριθμό προτάσεων και για να σε αποτρέψουμε να στέλνεις άκυρες προτάσεις, θα χάνεις πόντους αναλογικά με το level για άκυρες προτάσεις.\n \nΥπενθύμιση: Οι τόνοι δεν επιτρέπονται."
+                    android:textSize="22sp"
+                    android:textColor="@color/chalkColor"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView19"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="7dp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/aboutUs"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- empty  -->
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="300sp"
+                    android:layout_height="180sp"
+                    android:src="@drawable/lisgarititleandslogan"
+                    android:background="@drawable/total_points"/>
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:id="@+id/whoweare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/logo"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="22sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/chalkColor"
+                    android:text="Είμαστε οι Lisgar Studios, μια νεοσύστατη ομάδα ανάπτυξης και διαχείρισης εφαρμογών και αυτή είναι η πρώτη μας εφαρμογή."/>
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:id="@+id/contactus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/whoweare"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="22sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/chalkColor"
+                    android:text="Επικοινωνήστε μαζί μας στο : lisgarstudios@gmail.com"/>
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:id="@+id/thankstotitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contactus"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/chalkColor"
+                    android:text="Ευχαριστούμε πολύ:"/>
+                <com.example.user.summerproject.myTools.FriendsTextView
+                    android:id="@+id/thanksto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thankstotitle"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="22sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/chalkColor"
+                    android:text="-Το site www.aka-acid.com για τις υπέροχες γραμματοσειρές.\n\n-Τους ανθρώπους που ανέχτηκαν όλα τα bugs και τα κακά στάδια της εφαρμογής και μας βοήθησαν να την βελτιώσουμε.\n\n-Τους ανθρώπους που παραμελήσαμε και την κατανόηση που αυτοί δείξανε για να ολοκληρωθεί η εφαρμογή.\n\n-Το σύνολο των ατόμων που πιστευούν στην λογική της ελεύθερης γνώσης και πιο συγκεκριμένα του ανοιχτού κώδικα (open-source) που έδωσαν λύση στα προβλήματα που αντιμετωπίσαμε."/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+    <!--Changable content -->
+
+    <LinearLayout
+        android:id="@+id/bottomLinear"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/backInfo"
+            android:background="@drawable/blackboard_button"
+            android:textSize="30sp"
+            android:text="Πίσω"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/chalkColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/nextInfo"
+            android:textColor="@color/chalkColor"
+            android:background="@drawable/blackboard_button"
+            android:textSize="30sp"
+            android:textAllCaps="false"
+            android:text="Επόμενο "
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

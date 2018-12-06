@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@drawable/papertorn">
+
+
+    <LinearLayout
+        android:id="@+id/user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:visibility="visible"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/sender_tag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-10dp"
+            android:textAlignment="gravity"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/pencilColor"
+            android:textSize="40sp"
+            android:text="Sender"/>
+        <EditText
+            android:id="@+id/user_message_tag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-50dp"
+            android:layout_marginBottom="30dp"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:inputType="textMultiLine"
+            android:textColor="@color/pencilColor"
+            android:textSize="30sp"
+            android:background="@null"
+            android:textColorHint="@color/pencilColor"
+            android:hint="Το μήνυμά σου"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/message_cancel_button"
+            android:alpha="0.75" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="10dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/msgButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textColor="@color/pencilColor"
+            android:background="@drawable/done_button"
+            android:alpha="0.75"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
