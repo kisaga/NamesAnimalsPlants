@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:state_selected="true">
+        <shape>
+            <gradient
+                android:startColor="#4d848484"
+                android:centerColor="#66848484"
+                android:endColor="#b3848484"
+                android:angle="315"/>
+            <stroke android:color="@color/pencilColor"
+                android:width="2dp">
+
+            </stroke>
+            <corners android:radius="20dp">
+
+            </corners>
+            <padding
+                android:right="5dp"
+                android:left="5dp">
+
+            </padding>
+        </shape>
+
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+
+            <!-- -->
+
+
+
+
+            <gradient
+                android:startColor="@color/trans_pencil30"
+                android:centerColor="@color/trans_pencil50"
+                android:endColor="@color/trans_pencil30"
+                android:angle="135"/>
+            <stroke
+                android:dashGap="9dp"
+                android:dashWidth="9dp"
+                android:color="@color/trans_pencil80"
+                android:width="2dp">
+
+            </stroke>
+            <corners android:radius="20dp">
+
+            </corners>
+
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <!-- -->
+            <gradient
+                android:startColor="@color/trans_pencil5"
+                android:centerColor="@color/trans_pencil5"
+                android:endColor="@color/trans_pencil5"
+                android:angle="135"/>
+
+
+
+            <stroke
+                android:dashGap="9dp"
+                android:dashWidth="9dp"
+                android:color="@color/trans_pencil50"
+                android:width="1dp">
+
+            </stroke>
+            <corners android:radius="20dp">
+
+            </corners>
+
+        </shape>
+    </item>
+
+</selector>

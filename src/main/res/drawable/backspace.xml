@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:bottom="6dp"
+        android:top="6dp" android:drawable="@drawable/keyboard_drawable"/>
+    <item
+        android:bottom="6dp"
+        android:top="6dp" android:drawable="@drawable/back_icon" />
+
+</layer-list>

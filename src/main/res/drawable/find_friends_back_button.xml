@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid android:color="@color/transp_black20">
+
+            </solid>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/find_friends_back_icon" />
+
+</layer-list>
